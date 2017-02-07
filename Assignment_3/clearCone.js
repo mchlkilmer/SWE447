@@ -1,6 +1,8 @@
 var gl = null;
+var cone = null;
 
 function init() {
+    cone = new Cone(32);
     var canvas = document.getElementById( "webgl-canvas" );
 
     gl = WebGLUtils.setupWebGL( canvas );
@@ -17,6 +19,7 @@ function init() {
 
 function render() {
     gl.clear( gl.COLOR_BUFFER_BIT );
+    cone.render();
 }
 
 window.onload = init;
