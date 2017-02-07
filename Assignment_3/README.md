@@ -1,2 +1,2 @@
-# SWE447 Assignment_2
-# Opening and clearing your first window.
+# SWE447 Assignment_3
+# Creating a cone.
