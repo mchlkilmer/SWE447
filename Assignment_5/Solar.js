@@ -258,10 +258,10 @@ function render() {
   ms.pop();
   
   //
-  //  Jupitar
+  //  Jupiter
   //
   
-  name = "Jupitar";
+  name = "Jupiter";
   planet = Planets[name];
   data = SolarSystem[name];
   
