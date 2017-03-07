@@ -26,7 +26,7 @@ var SolarSystem = {
   Moon : {
     radius : 0.2724,
     distance : 0.00257,
-    year : 0.0748,
+    year : 13,
     color : [ 0.5, 0.5, 0.5, 1.0 ]
   },
   Mars : {
