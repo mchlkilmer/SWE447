@@ -154,10 +154,8 @@ function render() {
   planet.PointMode = false;
   
   ms.push();
-  ms.rotate(planet.year, planet.axis);
-  ms.translate(planet.distance, 0, 0);
-  ms.rotate(planet.day, planet.axis);
-  ms.scale(planet.Earth.radius);
+  ms.rotate(data.year, [0,0,1]);
+  ms.translate(data.distance*10, 0, 0);
   ms.scale(data.radius);
   gl.useProgram(planet.program);
   gl.uniformMatrix4fv(planet.uniforms.MV, false, flatten(ms.current()));
