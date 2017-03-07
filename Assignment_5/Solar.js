@@ -154,7 +154,7 @@ function render() {
   planet.PointMode = false;
   
   ms.push();
-  ms.rotate(year, axis);
+  ms.rotate(Earth.year, axis);
   ms.translate(distance, 0, 0);
   ms.rotate(day, axis);
   ms.scale(Earth.radius);
