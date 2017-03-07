@@ -151,7 +151,7 @@ function render() {
   planet = Planets[name];
   data = SolarSystem[name];
   
-  planet.PointMode = true;
+  planet.PointMode = false;
   
   ms.push();
   ms.scale(data.radius);
