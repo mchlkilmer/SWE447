@@ -4,7 +4,7 @@ funtion setup(){
   createCanvas(400,300);
   stroke(255);
   strokeWeight(4);
-  firework = new Particle(200,150)
+  firework = new Particle(random(width),height);
 }
 
 function draw () {
