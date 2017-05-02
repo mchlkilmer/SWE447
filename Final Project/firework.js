@@ -8,7 +8,7 @@ function Firework(){
       this.firework.update();
       
       if (this.firework.vel.y >= 0){
-        this.fire = null; 
+        this.firework = null; 
       }
     }
   }
