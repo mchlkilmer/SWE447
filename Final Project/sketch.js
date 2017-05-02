@@ -1,7 +1,7 @@
 var firework;
 var gravity;
 
-funtion setup(){
+function setup(){
   createCanvas(400,300);
   gravity = createVector(0,0.2);
   stroke(255);
