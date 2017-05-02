@@ -3,11 +3,19 @@ function Firework(){
   this.firework = new Particle(random(width),height);
   
   this.update = function(){
-    this.firework.applyForce(gravity);
-    this.firework.update();
+    if (this.firework){
+      this.firework.applyForce(gravity);
+      this.firework.update();
+      
+      if (this.firework.vel.y >= 0){
+        this.fire = null; 
+      }
+    }
   }
   
   this.show = function(){
-    this.firework.show();
+    if (this.firework){
+      this.firework.show();
+    }
   }
 }
