@@ -1,8 +1,13 @@
 
 
-function Particle(x,y) {
+function Particle(x,y, firework) {
   this.pos = createVector(x,y);
-  this.vel = createVector(0, random(-12, -8));
+  if(firework){
+    this.vel = createVector(0, random(-12, -8));
+  }
+  else{
+    this.vel = p5.Vector.random2D();
+  }
   this.acc = createVector(0,0);
   
   this.applyForce = function(force){
