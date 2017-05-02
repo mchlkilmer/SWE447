@@ -21,7 +21,6 @@ function Particle(x,y, hu, firework) {
   
   
   this.update = function() {
-    colorMode(HSB);
     if (!this.firework){
       this.vel.mult(0.9);
       this.lifespan -= 4;
@@ -41,6 +40,7 @@ function Particle(x,y, hu, firework) {
   }
   
   this.show = function() {
+    colorMode(HSB);
     if(!this.firework){
       strokeWeight(2);
       stroke(hu, 255, 255, this.lifespan);
