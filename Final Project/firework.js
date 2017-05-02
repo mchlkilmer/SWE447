@@ -3,6 +3,14 @@ function Firework(){
   this.firework = new Particle(random(width),height , true);
   this.exploded = false;
   this.particles = [];
+  this.done = function(){
+    if (this.exploded && this.particles.length == 0){
+      return true
+    }
+    else{
+      return false
+    }
+  }
   
   this.update = function(){
     if (!this.exploded){
